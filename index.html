@@ -6,7 +6,7 @@
   <title>Peter McEchron Cornwell — A Life Remembered</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <style>
@@ -15,7 +15,7 @@
       --text:   #e8dfd2;
       --accent: #c4a06a;
       --muted:  #7a6f60;
-      --rule:   rgba(196, 160, 106, 0.25);
+      --rule:   rgba(196, 160, 106, 0.22);
     }
 
     .reveal-viewport { background: var(--bg); }
@@ -26,7 +26,6 @@
       font-size: 21px;
     }
 
-    /* ── Slide shell ── */
     .reveal .slides section {
       height: 100%;
       padding: 0;
@@ -34,10 +33,9 @@
       text-align: left;
     }
 
-    /* ── Shared layout helpers ── */
+    /* ── Shared layout ── */
     .essay-slide,
     .title-slide,
-    .text-only-slide,
     .closing-slide {
       display: flex !important;
       height: 100%;
@@ -45,9 +43,7 @@
       padding: 5vh 5vw;
     }
 
-    /* ═══════════════════════════
-       TITLE SLIDE
-    ═══════════════════════════ */
+    /* ── Title ── */
     .title-slide {
       flex-direction: column;
       align-items: center;
@@ -58,10 +54,10 @@
 
     .title-slide img {
       max-height: 44vh;
-      max-width: 55%;
+      max-width: 50%;
       object-fit: cover;
       border: 1px solid var(--accent);
-      filter: sepia(15%) brightness(0.92);
+      filter: sepia(15%) brightness(0.9);
     }
 
     .title-slide h1 {
@@ -78,20 +74,9 @@
       font-size: 1em;
       color: var(--accent);
       letter-spacing: 0.2em;
-      font-weight: 300;
     }
 
-    .title-slide .tagline {
-      font-style: italic;
-      color: var(--muted);
-      font-size: 1em;
-      max-width: 420px;
-      line-height: 1.7;
-    }
-
-    /* ═══════════════════════════
-       ESSAY SLIDES (photo + text)
-    ═══════════════════════════ */
+    /* ── Essay slides ── */
     .essay-slide {
       flex-direction: row;
       align-items: center;
@@ -124,12 +109,12 @@
     .text-col h2 {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-weight: 300;
-      font-size: 1.4em;
+      font-size: 1.35em;
       color: var(--accent);
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       margin: 0 0 1em 0;
-      padding-bottom: 0.6em;
+      padding-bottom: 0.55em;
       border-bottom: 1px solid var(--rule);
     }
 
@@ -139,73 +124,33 @@
       color: var(--text);
     }
 
-    /* ═══════════════════════════
-       TEXT-ONLY SLIDE
-    ═══════════════════════════ */
-    .text-only-slide {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-
-    .text-only-slide h2 {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 300;
-      font-size: 1.4em;
-      color: var(--accent);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin: 0 0 1em 0;
-      padding-bottom: 0.6em;
-      border-bottom: 1px solid var(--rule);
-      width: 100%;
-      max-width: 680px;
-    }
-
-    .text-only-slide p {
-      line-height: 1.9;
-      margin: 0 0 1.2em 0;
-      font-size: 1.05em;
-      max-width: 680px;
-    }
-
-    /* ═══════════════════════════
-       CLOSING SLIDE
-    ═══════════════════════════ */
+    /* ── Closing ── */
     .closing-slide {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      gap: 1.4rem;
-    }
-
-    .closing-slide img {
-      max-height: 38vh;
-      max-width: 52%;
-      object-fit: cover;
-      border: 1px solid var(--accent);
-      filter: sepia(15%) brightness(0.88);
-    }
-
-    .closing-slide .epitaph {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 300;
-      font-size: 1.5em;
-      color: var(--accent);
-      letter-spacing: 0.08em;
+      gap: 1.6rem;
     }
 
     .closing-slide .obit {
-      font-size: 0.88em;
+      font-size: 0.92em;
       color: var(--muted);
-      line-height: 1.9;
-      max-width: 480px;
+      line-height: 2;
+      max-width: 500px;
     }
 
-    /* ── Controls & chrome ── */
+    .closing-slide .dates-large {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-size: 1.3em;
+      color: var(--accent);
+      letter-spacing: 0.15em;
+    }
+
+    /* ── Chrome ── */
     .reveal .controls { color: var(--accent); }
-    .reveal .progress { color: var(--accent); height: 2px; }
+    .reveal .progress  { color: var(--accent); height: 2px; }
     .reveal .slide-number {
       font-family: 'EB Garamond', serif;
       font-size: 13px;
@@ -220,87 +165,58 @@
 <div class="reveal">
   <div class="slides">
 
-    <!-- ① Title -->
+    <!-- ① -->
     <section>
       <div class="title-slide">
         <img src="Pete Color 4 1.jpeg" alt="Peter Cornwell">
         <h1>Peter McEchron Cornwell</h1>
         <div class="dates">1946 &ndash; 2024</div>
-        <div class="tagline">A life of resilience, community, and love.</div>
       </div>
     </section>
 
-    <!-- ② Roots -->
+    <!-- ② Glens Falls -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
           <img src="Our Family 1.jpeg" alt="The Cornwell family">
         </div>
         <div class="text-col">
-          <h2>Roots</h2>
-          <p>Peter was born in 1946 in Glens Falls, New York, to Kirkham and Margaret Cornwell. His grandfather, Dean Cornwell, was a celebrated illustrator and muralist whose figures have lived on the walls of public buildings and in the memory of a nation. In one painting that has since surfaced on an art history channel, a young boy holds a musket as Betsy Ross sews the first American flag. That boy was Peter.</p>
-          <p>He grew up in a small town where sport was the common language of community. Baseball, basketball, and tennis filled his youth. Engagement with neighbors through play — competitive, generous, unhurried — would become one of the defining threads of his life.</p>
+          <h2>Glens Falls</h2>
+          <p>Peter was born in 1946 in Glens Falls, New York, to Kirkham and Margaret Cornwell. His grandfather, Dean Cornwell, was a celebrated illustrator and muralist. In one painting that has since surfaced on an art history channel, a young boy holds a musket as Betsy Ross sews the first American flag. That boy was Peter.</p>
+          <p>He grew up playing baseball, basketball, and tennis in a small town where sport was the common language of community. That engagement — competitive, generous, unhurried — would remain a thread through the rest of his life.</p>
         </div>
       </div>
     </section>
 
-    <!-- ③ A Test of Character -->
+    <!-- ③ St. Lawrence -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
-          <img src="06.jpeg" alt="Peter Cornwell">
+          <img src="unnamed (1).jpeg" alt="Peter Cornwell">
         </div>
         <div class="text-col">
-          <h2>A Test of Character</h2>
-          <p>Peter attended St. Lawrence College in upstate New York, where he enrolled in the Army's Reserve Officers' Training Corps with every expectation of serving as a forward observer in Vietnam. At his pre-deployment physical, a military doctor discovered a malignant tumor in his thyroid. He received a medical discharge.</p>
-          <p>Thyroid cancer at twenty-two proved to be the first of three serious health events Peter would face in his lifetime. Through each, his response was the same: extraordinary determination, deep vitality, and a will to recover that consistently surprised those around him.</p>
+          <h2>St. Lawrence</h2>
+          <p>Peter attended St. Lawrence College in upstate New York, where he enrolled in the Army's Reserve Officers' Training Corps expecting to serve as a forward observer in Vietnam. At his pre-deployment physical, a military doctor found a malignant tumor in his thyroid. He received a medical discharge and, after surgery, recovered fully.</p>
+          <p>It was the first of three serious health events he would face across his life. Through each, his response was the same: focus, patience, and an almost stubborn refusal to stop moving forward.</p>
         </div>
       </div>
     </section>
 
-    <!-- ④ Going West -->
+    <!-- ④ San Francisco -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
-          <img src="unnamed (1).jpeg" alt="Peter in San Francisco">
+          <img src="20200215_192031951_iOS.jpeg" alt="Peter Cornwell">
         </div>
         <div class="text-col">
-          <h2>Going West, 1969</h2>
-          <p>After surgery and recovery, Peter did what young people did in 1969 — he moved to San Francisco. There he built a new life, found work, and found love. He met Nancy Perry, who would become his wife and partner for the fifty years that followed. Their first home together was on 47th Avenue.</p>
-          <p>In 1976, Peter and Nancy crossed the bay to Fairfax and started a family. Their son Will arrived in 1977, followed by Charley in 1979. Neither boy, it must be said, ever quite achieved their father's perpetual state of tanness — a gap they have not closed to this day.</p>
+          <h2>San Francisco</h2>
+          <p>After his discharge, Peter did what young people did in 1969 — he moved to San Francisco. He met Nancy Perry there; they married and made their first home on 47th Avenue. In 1976 they crossed the bay to Fairfax, where Will was born in 1977 and Charley in 1979. In 1985, Peter founded Angio West, Inc., a medical device distributor that supplied hospitals across the Bay Area for more than twenty years.</p>
+          <p>Coaching was a constant alongside his work — youth baseball, tennis, Special Olympics. He was a longtime mentor through Big Brothers and Big Sisters. He was a fixture on Marin courts and fields, and in his later years became a doubles specialist with quick hands at the net that other players couldn't match.</p>
         </div>
       </div>
     </section>
 
-    <!-- ⑤ Coach, Mentor, Friend -->
-    <section>
-      <div class="essay-slide">
-        <div class="photo-col">
-          <img src="Pete and Hilary 1.jpeg" alt="Peter with family">
-        </div>
-        <div class="text-col">
-          <h2>Coach, Mentor, Friend</h2>
-          <p>Coaching was a constant in Peter's adult life. He was a fixture on Marin's courts and fields — playing, coaching, or talking sideline strategy with characteristic warmth. In his later years he became a doubles specialist, known for quick hands at the net and half-volleys that other players simply couldn't reach.</p>
-          <p>Beyond organized sport, Peter coached Special Olympics tennis and served for many years as a mentor through Big Brothers and Big Sisters. Jason Browne, his "little brother," was one of many lives Peter shaped simply by showing up — steadily, year after year — and offering the gift of his time.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ⑥ The Second Battle -->
-    <section>
-      <div class="essay-slide">
-        <div class="photo-col">
-          <img src="IMG_0510.jpeg" alt="Peter Cornwell">
-        </div>
-        <div class="text-col">
-          <h2>The Second Battle</h2>
-          <p>In 1988, Peter developed recurring insulin-producing tumors in his pancreas — a condition requiring three major operations and ultimately the removal of the organ entirely. The recovery was long and difficult. But he met it the same way he met everything: with focus, patience, and a refusal to stop moving forward.</p>
-          <p>It was characteristic of Peter that after such an ordeal, what followed was not retreat but expansion. In the early 2000s, he and Nancy began spending summers in Grand Lake Stream, Maine. A quieter chapter opened — wilder, slower, and full of a particular kind of joy that only distance from ordinary life can bring.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ⑦ Maine -->
+    <!-- ⑤ Maine -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
@@ -308,22 +224,24 @@
         </div>
         <div class="text-col">
           <h2>Maine</h2>
-          <p>Peter loved West Grand Lake and the land-locked salmon that ran through it. For many years he made the cross-country drive twice annually — often with Nancy, sometimes with a faithful dog riding alongside. He and Nancy maintained an off-grid cabin and a web of decades-long friendships that threaded through the Maine community like roots.</p>
-          <p>He took his grandchildren fishing and blew his air horn whenever they caught a salmon, to their enormous, shrieking excitement. He drove them to Caribou Rock to jump into the lake. He cooked blueberry pancakes on a griddle, the berries freshly picked that morning by the grandchildren themselves. These are the mornings they will remember longest.</p>
+          <p>In the early 2000s, Peter and Nancy began spending summers in Grand Lake Stream, Maine. He developed a deep affection for land-locked salmon and West Grand Lake, making the cross-country drive twice a year — often with Nancy, sometimes with a dog alongside. They maintained an off-grid cabin and friendships that had grown over decades.</p>
+          <p>He took his grandchildren fishing and blew his air horn every time they caught a salmon. He drove them out to Caribou Rock to jump into the lake, and cooked blueberry pancakes on a griddle with berries the grandchildren had picked that morning. In 2019, he suffered a severe heart attack while on the lake and was airlifted to Bangor. He outlived the five-year prognosis that followed.</p>
         </div>
       </div>
     </section>
 
-    <!-- ⑧ Closing -->
+    <!-- ⑥ Closing -->
     <section>
       <div class="closing-slide">
-        <img src="20240731_162844718_iOS.jpeg" alt="Peter Cornwell, July 2024">
+        <div class="dates-large">October 22, 2024</div>
         <div class="obit">
-          In 2019, Peter suffered a severe heart attack while in Grand Lake Stream and was airlifted to Bangor for treatment. In characteristic style, he outlived the five-year prognosis he was given.<br><br>
-          Peter McEchron Cornwell passed away peacefully on October 22, 2024, at his home in Sleepy Hollow, California.<br><br>
-          He is survived by his wife Nancy, his children Will and Charley,<br>his siblings Kirk and Lucy, and five grandchildren.
+          Peter McEchron Cornwell passed away peacefully at his home<br>
+          in Sleepy Hollow, California, at the age of 77.<br><br>
+          He is survived by his wife Nancy, his children Will and Charley,<br>
+          his siblings Kirk and Lucy, and five grandchildren.<br><br>
+          Memorial events will be held in Marin, Grand Lake Stream,<br>
+          and Glens Falls in the months ahead.
         </div>
-        <div class="epitaph">He showed up. He stayed. He loved well.</div>
       </div>
     </section>
 
