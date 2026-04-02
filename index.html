@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Peter McEchron Cornwell — A Life Remembered</title>
+  <title>Peter McEchron Cornwell</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
     }
 
     .title-slide img {
-      max-height: 44vh;
+      max-height: 46vh;
       max-width: 50%;
       object-fit: cover;
       border: 1px solid var(--accent);
@@ -126,26 +126,26 @@
 
     /* ── Closing ── */
     .closing-slide {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 1.6rem;
+      gap: 5%;
     }
 
-    .closing-slide .obit {
-      font-size: 0.92em;
+    .closing-slide .photo-col img {
+      filter: sepia(18%) brightness(0.85);
+    }
+
+    .closing-slide .text-col p {
       color: var(--muted);
+      font-size: 0.95em;
       line-height: 2;
-      max-width: 500px;
     }
 
-    .closing-slide .dates-large {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 300;
-      font-size: 1.3em;
-      color: var(--accent);
-      letter-spacing: 0.15em;
+    .closing-slide .text-col p:last-child {
+      color: var(--text);
+      font-style: italic;
+      font-size: 1em;
+      margin-top: 0.5em;
     }
 
     /* ── Chrome ── */
@@ -165,82 +165,142 @@
 <div class="reveal">
   <div class="slides">
 
-    <!-- ① -->
+    <!-- Title -->
     <section>
       <div class="title-slide">
-        <img src="Pete Color 4 1.jpeg" alt="Peter Cornwell">
+        <img src="Pete_main.jpeg" alt="Peter Cornwell">
         <h1>Peter McEchron Cornwell</h1>
         <div class="dates">1946 &ndash; 2024</div>
       </div>
     </section>
 
-    <!-- ② Glens Falls -->
+    <!-- Glens Falls ① -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
-          <img src="Our Family 1.jpeg" alt="The Cornwell family">
+          <img src="glensfalls/parents.jpg" alt="Kirkham and Margaret Cornwell">
+        </div>
+        <div class="text-col">
+          <h2>Kirkham and Margaret</h2>
+          <p>Peter was born in 1946 in Glens Falls, New York, to Kirkham and Margaret Cornwell. They had married in 1943 — a wartime wedding while Kirkham was stationed as a flying instructor for a Navy aviation school. Kirkham later became a small businessman, and was the son of Dean Cornwell, a celebrated American illustrator and muralist whose work appeared on the walls of public buildings across the country.</p>
+          <p>Peter grew up in a world that was rooted and community-minded, organized around the rhythms of a small American town. That sense of place — and the obligations that came with it — stayed with him for the rest of his life.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Glens Falls ② -->
+    <section>
+      <div class="essay-slide">
+        <div class="photo-col">
+          <img src="glensfalls/fam.jpg" alt="Peter growing up in Glens Falls">
         </div>
         <div class="text-col">
           <h2>Glens Falls</h2>
-          <p>Peter was born in 1946 in Glens Falls, New York, to Kirkham and Margaret Cornwell. His grandfather, Dean Cornwell, was a celebrated illustrator and muralist. In one painting that has since surfaced on an art history channel, a young boy holds a musket as Betsy Ross sews the first American flag. That boy was Peter.</p>
-          <p>He grew up playing baseball, basketball, and tennis in a small town where sport was the common language of community. That engagement — competitive, generous, unhurried — would remain a thread through the rest of his life.</p>
+          <p>As a boy, Peter played baseball, basketball, and tennis with a commitment that would show up in everything he did. Sport was how a neighborhood cohered, how friendships formed, how you showed up for other people. He understood that early and never forgot it.</p>
+          <p>That instinct — that a game is really about something larger than the score — followed him from Glens Falls through every place he lived afterward. He never stopped coaching, never stopped playing, and never lost the patience for beginners that marks a genuinely good teacher.</p>
         </div>
       </div>
     </section>
 
-    <!-- ③ St. Lawrence -->
+    <!-- Glens Falls ③ -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
-          <img src="unnamed (1).jpeg" alt="Peter Cornwell">
+          <img src="glensfalls/discharge.jpg" alt="Peter at St. Lawrence">
         </div>
         <div class="text-col">
           <h2>St. Lawrence</h2>
-          <p>Peter attended St. Lawrence College in upstate New York, where he enrolled in the Army's Reserve Officers' Training Corps expecting to serve as a forward observer in Vietnam. At his pre-deployment physical, a military doctor found a malignant tumor in his thyroid. He received a medical discharge and, after surgery, recovered fully.</p>
-          <p>It was the first of three serious health events he would face across his life. Through each, his response was the same: focus, patience, and an almost stubborn refusal to stop moving forward.</p>
+          <p>Peter attended St. Lawrence College in upstate New York, where he enrolled in the Army's Reserve Officers' Training Corps expecting to deploy to Vietnam as a forward observer. At his pre-deployment physical, a military doctor discovered a malignant tumor in his thyroid. He received a medical discharge and, after surgery, recovered fully.</p>
+          <p>The diagnosis arrived when he was twenty-two. It was the first of three serious health events Peter would face in his lifetime, and through each his response was the same: extraordinary determination, deep vitality, and a will to recover that consistently surprised the people around him.</p>
         </div>
       </div>
     </section>
 
-    <!-- ④ San Francisco -->
+    <!-- California ① -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
-          <img src="20200215_192031951_iOS.jpeg" alt="Peter Cornwell">
+          <img src="california/house.jpg" alt="Peter and Nancy's first home in San Francisco">
         </div>
         <div class="text-col">
           <h2>San Francisco</h2>
-          <p>After his discharge, Peter did what young people did in 1969 — he moved to San Francisco. He met Nancy Perry there; they married and made their first home on 47th Avenue. In 1976 they crossed the bay to Fairfax, where Will was born in 1977 and Charley in 1979. In 1985, Peter founded Angio West, Inc., a medical device distributor that supplied hospitals across the Bay Area for more than twenty years.</p>
-          <p>Coaching was a constant alongside his work — youth baseball, tennis, Special Olympics. He was a longtime mentor through Big Brothers and Big Sisters. He was a fixture on Marin courts and fields, and in his later years became a doubles specialist with quick hands at the net that other players couldn't match.</p>
+          <p>After his discharge and recovery, Peter did what many young people did in 1969 — he moved to San Francisco. He found work, built a new life, and met Nancy Perry, who would become his wife and partner for fifty years. Their first home together was on 47th Avenue.</p>
+          <p>The city suited him. He was social by nature, at ease in a room full of strangers, energetic and unpretentious in a way that made people want to be around him. San Francisco in those years was alive with possibility, and Peter stepped into it fully.</p>
         </div>
       </div>
     </section>
 
-    <!-- ⑤ Maine -->
+    <!-- California ② -->
     <section>
       <div class="essay-slide">
         <div class="photo-col">
-          <img src="Pete with Bass 1.jpeg" alt="Peter fishing on West Grand Lake">
+          <img src="california/baby.jpg" alt="Peter with his sons">
         </div>
         <div class="text-col">
-          <h2>Maine</h2>
-          <p>In the early 2000s, Peter and Nancy began spending summers in Grand Lake Stream, Maine. He developed a deep affection for land-locked salmon and West Grand Lake, making the cross-country drive twice a year — often with Nancy, sometimes with a dog alongside. They maintained an off-grid cabin and friendships that had grown over decades.</p>
-          <p>He took his grandchildren fishing and blew his air horn every time they caught a salmon. He drove them out to Caribou Rock to jump into the lake, and cooked blueberry pancakes on a griddle with berries the grandchildren had picked that morning. In 2019, he suffered a severe heart attack while on the lake and was airlifted to Bangor. He outlived the five-year prognosis that followed.</p>
+          <h2>Fairfax</h2>
+          <p>In 1976, Peter and Nancy crossed the bay and settled in Fairfax, in Marin County. Their son Will was born in 1977 and Charley arrived in 1979. Neither boy, it should be noted, ever quite achieved their father's perpetual state of tanness — a deficit they acknowledge to this day.</p>
+          <p>Fairfax was a good fit: small enough to know your neighbors, close to the hills and the bay. Peter put down roots there and kept them. He coached youth baseball and tennis, played on Marin's courts well into middle age, and eventually became a doubles specialist whose quick hands at the net were a consistent topic of commentary.</p>
         </div>
       </div>
     </section>
 
-    <!-- ⑥ Closing -->
+    <!-- California ③ -->
+    <section>
+      <div class="essay-slide">
+        <div class="photo-col">
+          <img src="california/Our Family 1.jpeg" alt="The Cornwell family">
+        </div>
+        <div class="text-col">
+          <h2>Marin</h2>
+          <p>Alongside coaching, Peter served for many years as a mentor through Big Brothers and Big Sisters, and coached Special Olympics tennis. He was a fixture on fields and sidelines — someone who showed up, stayed through the whole practice, and remembered everyone's name.</p>
+          <p>In 1988, he developed recurring insulin-producing tumors in his pancreas — a condition requiring three major operations and ultimately the removal of the organ. The recovery was long and difficult. He met it the same way he met everything: with focus, patience, and a refusal to stop moving forward.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- California ④ -->
+    <section>
+      <div class="essay-slide">
+        <div class="photo-col">
+          <img src="california/young.jpg" alt="Peter Cornwell">
+        </div>
+        <div class="text-col">
+          <h2>Sleepy Hollow</h2>
+          <p>Peter and Nancy eventually settled in Sleepy Hollow, where they made their home for more than forty years. It was a life built steadily: a tight community of long friendships, regular tennis, grandchildren arriving over time, and the annual rhythm of the cross-country drive to Maine.</p>
+          <p>He was the kind of person whose presence organized things around him without his trying to. Neighbors knew him. Kids in the neighborhood knew him. He was reliably there — on the court, at the game, at the table.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maine -->
+    <section>
+      <div class="essay-slide">
+        <div class="photo-col">
+          <img src="maine/Pete with Bass 1.jpeg" alt="Peter fishing on West Grand Lake">
+        </div>
+        <div class="text-col">
+          <h2>Maine</h2>
+          <p>In the early 2000s, Peter and Nancy began spending summers in Grand Lake Stream, Maine. He developed a deep affection for land-locked salmon and West Grand Lake, making the cross-country drive twice a year — often with Nancy, always with a dog alongside. They kept an off-grid cabin there for many years, and maintained friendships with the community that stretched across decades.</p>
+          <p>He took his grandchildren fishing and blew his air horn every time they pulled in a salmon. He drove them out to Caribou Rock to jump into the lake, and cooked blueberry pancakes on a griddle with berries the grandchildren had picked that morning. In 2019, he suffered a severe heart attack while on the water. He was treated and recovered partially — and, in characteristic fashion, outlived the prognosis he was given by several years.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
     <section>
       <div class="closing-slide">
-        <div class="dates-large">October 22, 2024</div>
-        <div class="obit">
-          Peter McEchron Cornwell passed away peacefully at his home<br>
-          in Sleepy Hollow, California, at the age of 77.<br><br>
-          He is survived by his wife Nancy, his children Will and Charley,<br>
-          his siblings Kirk and Lucy, and five grandchildren.<br><br>
-          Memorial events will be held in Marin, Grand Lake Stream,<br>
-          and Glens Falls in the months ahead.
+        <div class="photo-col">
+          <img src="california/20200215_192031951_iOS.jpeg" alt="Peter Cornwell">
+        </div>
+        <div class="text-col">
+          <h2>Peter McEchron Cornwell</h2>
+          <p>Born in Glens Falls, New York, 1946.<br>
+          Raised in a family of makers and community builders.<br>
+          Husband to Nancy for fifty years.<br>
+          Father to Will and Charley.<br>
+          Coach, mentor, fisherman, neighbor.</p>
+          <p>He is survived by his wife Nancy, his children Will and Charley, his siblings Kirk and Lucy, and five grandchildren.</p>
+          <p>He showed up wherever he was needed, and stayed.</p>
         </div>
       </div>
     </section>
